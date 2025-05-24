@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="lib/phaser.min.js"></script>
+
+    <style>
+      @font-face {
+        font-family: RakeslyRG;
+        src: url(assets/fonts/font.otf);
+      }
+
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        display: none;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #c3c302;
+        border-radius: 10px;
+      }
+
+      * {
+        font-family: RakeslyRG;
+        user-select: none;
+      }
+
+      html {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background: #000;
+        overflow: hidden;
+      }
+
+      @keyframes blink {
+        0%,
+        100% {
+          opacity: 0.3;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+
+      @media (min-width: 600px) {
+        body {
+          background: url(assets/backgrounds/desktop.png) no-repeat center
+            center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const XURL = "<%- url %>";
+    </script>
+    <script src="login.js"></script>
+  </body>
+</html>

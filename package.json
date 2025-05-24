@@ -1,0 +1,24 @@
+{
+  "name": "axagame",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "build": "[my-framework] build --output public"
+  },
+  "author": "anujc21",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axagame": "file:",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "express-session": "^1.18.1",
+    "firebase": "11.0.1",
+    "nodemon": "^3.1.7",
+    "socket.io": "4.8.1",
+    "undici": "^7.8.0"
+  }
+}
